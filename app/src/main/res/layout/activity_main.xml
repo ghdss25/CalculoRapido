@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EDECEC">
+
+
+    <TextView
+
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculo Rapido!"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#55AF1D"
+        />
+
+    <ImageView
+
+        android:id="@+id/image_operacao"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/download"
+        android:layout_marginTop="32dp"
+        />
+
+    <TextView
+
+        android:id="@+id/subtitulo"
+        android:layout_below="@+id/image_operacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione o nível de  do calculo!"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#55AF1D"
+        />
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black" />
+
+    <Button
+
+        android:id="@+id/button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subtitulo"
+        android:layout_marginTop="19dp"
+        android:text="1"
+        android:layout_marginLeft="20dp"
+        android:textColor="#55AF1D"
+        android:textSize="22sp" />
+
+    <Button
+
+        android:id="@+id/button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/button_1"
+        android:layout_marginLeft="114dp"
+        android:layout_marginTop="389dp"
+        android:text="2"
+        android:textColor="#55AF1D"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+
+        android:id="@+id/button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/button_2"
+        android:layout_marginLeft="114dp"
+        android:layout_marginTop="389dp"
+        android:text="3"
+        android:textColor="#55AF1D"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+
+        android:id="@+id/button_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="439dp"
+        android:text="4"
+        android:layout_marginLeft="20dp"
+        android:textColor="#55AF1D"
+        android:textSize="22sp" />
+
+    <TextView
+
+        android:id="@+id/subtitulo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_1"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="Esqueça a calculadora. Aplique seu calculo rapido!"
+        android:textColor="#55AF1D"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
