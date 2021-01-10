@@ -1,215 +1,357 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
 
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EDECEC"
     android:orientation="vertical"
-    >
+    tools:context=".Operacao2">
 
-    <TextView
-
-        android:id="@+id/title_nivel_1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:text="Nível 4 das operações aritméticas "
-        android:textColor="#55AF1D"
-        android:textSize="22sp"
-        android:textStyle="bold" />
-
-    <TextView
-
-        android:id="@+id/subtitulo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/title_nivel_1"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="Informe o resultado em números aleatorios clicando nos botões para gerar operação?"
-        android:textColor="#55AF1D"
-        android:textSize="22sp"
-        android:textStyle="bold" />
-
-    <RelativeLayout
+    <LinearLayout
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/subtitulo">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <TextView
 
-            android:id="@+id/Conta"
+            android:id="@+id/title_nivel_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:ems="9"
-            android:hint="Escolha dos número para soma"
-            android:textSize="23dp" />
-
-        <Button
-
-            android:id="@+id/buttonescolha"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/Conta"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="-39dp"
-            android:layout_marginRight="14dp"
-            android:onClick="Calculo"
-            android:text="Escolha"
-            android:textAllCaps="false" />
-
-    </RelativeLayout>
-
-    <TextView
-
-        android:id="@+id/Situacao"
-        android:layout_width="169dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="28dp"
-        android:ems="9"
-        android:hint="Resposta "
-        android:textSize="23dp"
-        android:textColor="#55AF1D"
-        />
-
-    <RelativeLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/subtitulo1">
+            android:text="Nível 2 das operações aritméticas "
+            android:textColor="#55AF1D"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <TextView
 
-            android:id="@+id/Conta1"
+            android:id="@+id/subtitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_nivel_1"
+            android:layout_marginTop="20dp"
             android:gravity="center"
-            android:layout_width="wrap_content"
+            android:text="Informe o resultado em números aleatorios clicando nos botões para gerar operação?"
+            android:textColor="#55AF1D"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:ems="9"
-            android:hint="Escolha dos número para multiplicação"
-            android:textSize="23dp" />
+            android:layout_below="@+id/subtitulo">
 
-        <Button
+            <TextView
 
-            android:id="@+id/buttonescolha1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/Conta1"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="-47dp"
-            android:layout_marginRight="16dp"
-            android:onClick="Calculo_Multiplicar"
-            android:text="Escolha"
-            android:textAllCaps="false" />
+                android:id="@+id/Conta"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:ems="9"
+                android:hint="Escolha dos número para soma"
+                android:textSize="23dp" />
 
-    </RelativeLayout>
+            <Button
 
-    <TextView
+                android:id="@+id/buttonescolha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Conta"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-39dp"
+                android:layout_marginRight="14dp"
+                android:onClick="Calculo"
+                android:text="Escolha"
+                android:textAllCaps="false" />
 
-        android:id="@+id/Situacao1"
-        android:layout_width="169dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="28dp"
-        android:ems="9"
-        android:hint="Resposta "
-        android:textSize="23dp"
-        android:textColor="#55AF1D"
-
-        />
-
-    <RelativeLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/subtitulo1">
+        </RelativeLayout>
 
         <TextView
 
-            android:id="@+id/Conta2"
-            android:gravity="center"
-            android:layout_width="wrap_content"
+            android:id="@+id/Situacao"
+            android:layout_width="169dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="28dp"
             android:ems="9"
-            android:hint="Escolha dos número para divisão"
-            android:textSize="23dp" />
+            android:hint="Resposta "
+            android:textSize="23dp"
+            android:textColor="#55AF1D"
+            />
 
-        <Button
+        <RelativeLayout
 
-            android:id="@+id/buttonescolha2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/Conta2"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="-33dp"
-            android:layout_marginRight="14dp"
-            android:onClick="Calculo_Divisao"
-            android:text="Escolha"
-            android:textAllCaps="false" />
+            android:layout_below="@+id/subtitulo1">
 
-    </RelativeLayout>
+            <TextView
 
-    <TextView
+                android:id="@+id/Conta1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:ems="9"
+                android:hint="Escolha dos número para multiplicação"
+                android:textSize="23dp" />
 
-        android:id="@+id/Situacao2"
-        android:layout_width="169dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="25dp"
-        android:ems="9"
-        android:hint="Resposta "
-        android:textColor="#55AF1D"
-        android:textSize="23dp" />
+            <Button
 
-    <RelativeLayout
+                android:id="@+id/buttonescolha1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Conta1"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-47dp"
+                android:layout_marginRight="16dp"
+                android:onClick="Calculo_Multiplicar"
+                android:text="Escolha"
+                android:textAllCaps="false" />
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/subtitulo1">
+        </RelativeLayout>
 
         <TextView
 
-            android:id="@+id/Conta4"
-            android:gravity="center"
-            android:layout_width="wrap_content"
+            android:id="@+id/Situacao1"
+            android:layout_width="169dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="28dp"
             android:ems="9"
-            android:hint="Escolha dos número para subtracao"
+            android:hint="Resposta "
+            android:textSize="23dp"
+            android:textColor="#55AF1D"
+
+            />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subtitulo1">
+
+            <TextView
+
+                android:id="@+id/Conta2"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:ems="9"
+                android:hint="Escolha dos número para divisão"
+                android:textSize="23dp" />
+
+            <Button
+
+                android:id="@+id/buttonescolha2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Conta2"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-33dp"
+                android:layout_marginRight="14dp"
+                android:onClick="Calculo_Divisao"
+                android:text="Escolha"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+
+        <TextView
+
+            android:id="@+id/Situacao2"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:ems="9"
+            android:hint="Resposta "
+            android:textColor="#55AF1D"
             android:textSize="23dp" />
 
-        <Button
+        <RelativeLayout
 
-            android:id="@+id/buttonescolha4"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/Conta4"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="-33dp"
-            android:layout_marginRight="14dp"
-            android:onClick="Calculo_Subtracao"
-            android:text="Escolha"
-            android:textAllCaps="false" />
+            android:layout_below="@+id/subtitulo1">
 
-    </RelativeLayout>
+            <TextView
 
-    <TextView
+                android:id="@+id/Conta4"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:ems="9"
+                android:hint="Escolha dos número para subtracao"
+                android:textSize="23dp" />
 
-        android:id="@+id/Situacao4"
-        android:layout_width="169dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="25dp"
-        android:ems="9"
-        android:hint="Resposta "
-        android:textColor="#55AF1D"
-        android:textSize="23dp" />
+            <Button
 
-</LinearLayout>
+                android:id="@+id/buttonescolha4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Conta4"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-33dp"
+                android:layout_marginRight="14dp"
+                android:onClick="Calculo_Subtracao"
+                android:text="Escolha"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+
+        <TextView
+
+            android:id="@+id/Situacao4"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:ems="9"
+            android:hint="Resposta "
+            android:textColor="#55AF1D"
+            android:textSize="23dp" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subtitulo1">
+
+            <TextView
+
+                android:id="@+id/Conta5"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:ems="9"
+                android:hint="Escolha dos número para a potência"
+                android:textSize="23dp" />
+
+            <Button
+
+                android:id="@+id/buttonescolha5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Conta5"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-33dp"
+                android:layout_marginRight="14dp"
+                android:onClick="Calculo_Potencia"
+                android:text="Escolha"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+
+        <TextView
+
+            android:id="@+id/Situacao5"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:ems="9"
+            android:hint="Resposta "
+            android:textColor="#55AF1D"
+            android:textSize="23dp" />
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subtitulo1">
+
+            <TextView
+
+                android:id="@+id/Conta6"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:ems="9"
+                android:hint="Escolha dos número para a Raiz quadrada"
+                android:textSize="23dp" />
+
+            <Button
+
+                android:id="@+id/buttonescolha6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Conta6"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-33dp"
+                android:layout_marginRight="14dp"
+                android:onClick="Calculo_Raiz_Quadrada"
+                android:text="Escolha"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+
+        <TextView
+
+            android:id="@+id/Situacao6"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:ems="9"
+            android:hint="Resposta "
+            android:textColor="#55AF1D"
+            android:textSize="23dp" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subtitulo1">
+
+            <TextView
+
+                android:id="@+id/Conta7"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:ems="9"
+                android:hint="Escolha dos número para a Raiz cúbica"
+                android:textSize="23dp" />
+
+            <Button
+
+                android:id="@+id/buttonescolha7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Conta7"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-33dp"
+                android:layout_marginRight="14dp"
+                android:onClick="Calculo_Raiz_Cúbica"
+                android:text="Escolha"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+
+        <TextView
+
+            android:id="@+id/Situacao7"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:ems="9"
+            android:hint="Resposta "
+            android:textColor="#55AF1D"
+            android:textSize="23dp" />
+
+    </LinearLayout>
+
+</ScrollView>
